@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.Objects;
 
 public class TaskBean {
-
     private String taskName;
     private String desc;
     private String tags;
@@ -26,40 +25,20 @@ public class TaskBean {
         return taskName;
     }
 
-    public void setTaskName(String taskName) {
-        this.taskName = taskName;
-    }
-
     public String getDesc() {
         return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
     }
 
     public String getTags() {
         return tags;
     }
 
-    public void setTags(String tags) {
-        this.tags = tags;
-    }
-
     public Date getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
     public int getPriority() {
         return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
     }
 
     @Override

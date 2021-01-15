@@ -247,7 +247,7 @@ public class Main {
                             bean.getTaskName(),
                             bean.getDesc(),
                             bean.getTags(),
-                            new SimpleDateFormat("dd/mm/yyyy").parse(date),
+                            new SimpleDateFormat("dd/MM/yyyy").parse(date),
                             bean.getPriority()), catName, taskName);
 
                     if (result.equals("SUCCESS")) {
@@ -311,7 +311,7 @@ public class Main {
         System.out.println("Enter task priority");
         priority = sc2.nextInt();
 
-        Date date = new SimpleDateFormat("dd/mm/yyyy").parse(planDate);
+        Date date = new SimpleDateFormat("dd/MM/yyyy").parse(planDate);
         TaskBean bean = new TaskBean(taskName, desc, tags, date, priority);
         String result = model.addTask(bean, catName);
 
